@@ -3,81 +3,81 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Fabrics Workshop at HiPC 2025" />
-  <title>Fabrics Workshop – HiPC 2025</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>High Performance Fabrics – HiPC 2025</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <nav class="navbar">
-    <div class="nav-container">
-      <a class="logo" href="#">HiPC 2025</a>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#dates">Important Dates</a></li>
-        <li><a href="#call">Call for Participation</a></li>
-        <li><a href="#organizers">Organizers</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-  <header class="hero">
-    <div class="hero-content">
-      <h1>Fabrics in High Performance Computing Workshop</h1>
-      <p>Held with <strong>HiPC 2025</strong> — July 2025</p>
-      <a href="#about" class="btn">Learn More</a>
-    </div>
-  </header>
-  <section id="about" class="section">
+<section class="intro">
+    <h1>Workshop on High Performance Fabrics</h1>
+    <p class="date-location">17-Dec-2025<br>Hyderabad, India</p>
+  </section>
+
+  <section class="about">
     <h2>About the Workshop</h2>
     <p>
-      The Fabrics Workshop explores advancements in interconnect technologies such as InfiniBand,
-      Slingshot, and Omni-Path. We aim to foster collaboration between academia and industry
-      for building next-generation high-performance fabrics.
+      The word <strong>Fabrics</strong> is perhaps the most used or abused word in computing today. A Fabric is, as its name implies, a web of multiple devices in a cluster using some physical level connectivity with transport and protocol layers built on top of it. Computing in general, and High Performance Computing in particular have moved over the years from proprietary cluster interconnects to more popularly, Infiniband and Ethernet.
     </p>
-  </section>
-  <section id="dates" class="section">
-    <h2>Important Dates</h2>
-    <ul>
-      <li><strong>Submission Deadline:</strong> May 20, 2025</li>
-      <li><strong>Notification of Acceptance:</strong> June 10, 2025</li>
-      <li><strong>Workshop Date:</strong> July 15, 2025</li>
-    </ul>
-  </section>
-  <section id="call" class="section">
-    <h2>Call for Participation</h2>
     <p>
-      We invite researchers, engineers, and practitioners to submit papers, demos, or posters
-      related to HPC fabrics, interconnect topologies, and performance optimizations.
+      In the AI era, the focus has shifted towards communication fabrics due to growing demands of HOC and AI at scale. When it comes to connecting GPUs with each other, NVLink has been the most popular communication fabric. However, there have been recent advancements in this space with the formation of the <strong>Ultra Accelerator Link</strong> or <strong>UALink</strong>, consortium to connect accelerators and switches in AI computing pods with low latency/high bandwidth and supporting simple load-store semantics. The <strong>Ultra Ethernet Consortium (UEC)</strong> is working to enhance Ethernet to build a low latency, lossless variant to serve the needs of the AI era. <strong>Scale Up Ethernet (SUE)</strong> provides a framework to provide low latency, high bandwidth connectivity for XPU scale up networks based on Ethernet. 
     </p>
-    <ul>
-      <li>Scalable fabric architectures</li>
-      <li>Network congestion control</li>
-      <li>Collective operations over fabrics</li>
-      <li>Performance benchmarking of interconnects</li>
-    </ul>
+    <p>
+      <strong>Compute Express Link (CXL)</strong> is a memory semantic fabric that has been developed to solve multiple challenges in computing related to capacity and bandwidth of memory, as well as the need to disaggregate memory. With the introduction of <strong>Unordered IO (UIO)</strong>, the ubiquitous PCI Express protocol is also looking to add fabric capabilities.
+    </p>
+    <p>
+      The Fabrics for HPC/AI workshop will be a half-day workshop with the aim of exploring the novel research ideas around this very rich space of fabrics and the research happening in operating systems, virtualization and manageability in related areas.
+    </p>
   </section>
-  <section id="organizers" class="section">
-    <h2>Organizers</h2>
-    <div class="organizer-grid">
-      <div class="organizer">
-        <img src="images/organizer1.jpg" alt="Organizer 1">
-        <h3>Dr. Jane Doe</h3>
-        <p>XYZ University</p>
-      </div>
-      <div class="organizer">
-        <img src="images/organizer2.jpg" alt="Organizer 2">
-        <h3>Dr. John Smith</h3>
-        <p>ABC Research Labs</p>
-      </div>
+
+  <header>
+    <h4>32nd IEEE INTERNATIONAL CONFERENCE ON HIGH PERFORMANCE COMPUTING, DATA, & ANALYTICS</h4>
+    <h1>Workshop on High Performance Fabrics</h1>
+    <h3>17-Dec-2025 · Hyderabad, India</h3>
+  </header>
+
+  <section class="topics">
+    <div class="column">
+      <h2>Hardware Architectures</h2>
+      <ul>
+        <li>Fabrics for Next Gen AI/ML Workloads – UAL, UEC, SUE etc.</li>
+        <li>PCIe Unordered IO</li>
+        <li>Memory Expansion & Pooling</li>
+        <li>Switch Architecture/Design</li>
+      </ul>
+    </div>
+    <div class="column">
+      <h2>Software Architectures</h2>
+      <ul>
+        <li>Emulation & Prototype</li>
+        <li>Simulation & Verification</li>
+        <li>OS Support for Tiered Memory</li>
+        <li>Virtualization for Fabrics</li>
+      </ul>
+    </div>
+    <div class="column">
+      <h2>Applications & Use Cases</h2>
+      <ul>
+        <li>Benchmarking Applications</li>
+        <li>Workload Characterization</li>
+        <li>Analysis & Profiling of Fabric Performance</li>
+      </ul>
+    </div>
+    <div class="column">
+      <h2>Control Plane Software</h2>
+      <ul>
+        <li>Fabric Management</li>
+        <li>In-band and OOB Management of Fabric Devices</li>
+      </ul>
     </div>
   </section>
-  <section id="contact" class="section">
-    <h2>Contact</h2>
-    <p>For inquiries, email: <a href="mailto:workshop@hipc.org">workshop@hipc.org</a></p>
+
+  <section class="submission">
+    <h2>📢 Paper Submission Due: <span>10-Oct-2025</span></h2>
+    <p>Details at <a href="https://hipcfabrics.github.io/hipc-fabrics-2025" target="_blank">hipcfabrics.github.io/hipc-fabrics-2025</a></p>
   </section>
+
   <footer>
-    <p>&copy; 2025 Fabrics Workshop @ HiPC</p>
+    <p>Workshop Chairs: Mohan Parthasarathy (HPE), Sunita Jain (AMD)</p>
+    <p>Publicity Chair: Badrinath Ramamurthy (IITB) | Program Committee Chair: Ajay Joshi (Micron)</p>
   </footer>
 </body>
 </html>
